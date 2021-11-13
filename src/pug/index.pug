@@ -1,0 +1,149 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  title Dreamshare
+  link(rel='stylesheet', href='../styles/main.css')
+  link(rel='preconnect', href='https://fonts.googleapis.com')
+  link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap', rel='stylesheet')
+  link(rel='preconnect', href='https://fonts.googleapis.com')
+  link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap', rel='stylesheet')
+  link(rel='stylesheet', media='screen and (min-width: 768px)', href='../styles/tablet.css')
+  link(rel='stylesheet', media='screen and (min-width: 1440px)', href='../styles/desktop.css')
+.container
+  header.header
+    .header__nav
+      .header__login
+        a(href='') Log in
+      .header__signup
+        a(href='') Sign up
+    .header__logo
+      h1 DREAMSHARE
+    .header__title
+      h2 SHARE YOUR HOLIDAY DREAM
+    .header__undertitle
+      h2 And find the perfect partner to fullfill it
+    button.header__button(type='button')
+      span Find your holiday partner
+  main
+    section.about
+      .about__title
+        h2 How Dreamshare works?
+      .about__article-container
+        .about__article.about__article_1
+          button.about__step-button.about__step-button_1(type='button')
+            span STEP 1
+          .about__article-name.about__article-name_1
+            h3 Sed leo enim, condimentum
+          .about__article-text.about__article-text_1
+            p
+              | Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit
+              | amet facilisis.
+        .about__article.about__article_2
+          button.about__step-button.about__step-button_2(type='button')
+            span STEP 2
+          .about__article-name.about__article-name_2
+            h3 Morbi velit risus
+          .about__article-text.about__article-text_2
+            p
+              | Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.
+        .about__article.about__article_3
+          button.about__step-button.about__step-button_3(type='button')
+            span STEP 3
+          .about__article-name.about__article-name_3
+            h3 Sed leo enim, condimentum
+          .about__article-text.about__article-text_3
+            p
+              | Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit
+              | amet facilisis.
+    section.people
+      .people__title
+        h2 Meet a partner for your best holiday
+      .people__account-container
+        .people__account.people__account_1
+          .people__account-photo
+            img(src='../images/mobile/people1.png', alt='')
+          .people__account-name
+            span Bradley Hunter
+          .people__account-info
+            p Based in Chicago. I love playing tennis and loud music.
+        .people__account.people__account_2
+          .people__account-photo
+            img(src='../images/mobile/people2.png', alt='')
+          .people__account-name
+            span Diana Wells
+          .people__account-info.people__account-info_2
+            p
+              | Living in Athens, Greece. I love black and white classics, chillout music and green tea.
+        .people__account.people__account_3
+          .people__account-photo
+            img(src='../images/mobile/people3.png', alt='')
+          .people__account-name
+            span Marie Bennett
+          .people__account-info
+            p Currently living in Colorado. Lover of art, languages and travelling.
+        .people__account.people__account_4
+          .people__account-photo
+            img(src='../images/mobile/people4.png', alt='')
+          .people__account-name
+            span Christopher Pierce
+          .people__account-info.people__account-info_4
+            p Star Wars fanatic. I have a persistent enthusiasm to create new things.
+      button.people__button
+        span See other partners
+    section.activity
+      .activity__title
+        h2 Discover holiday activity ideas
+      .activity__type-container
+        .activity__type.activity__type_1
+          h3
+            | Sports and 
+            br
+            | Activities
+        .activity__type.activity__type_2
+          h3
+            | Wellness and 
+            br
+            | Health
+        .activity__type.activity__type_3
+          h3
+            | Extreme Sports 
+            br
+            | and Expeditions
+        .activity__type.activity__type_4
+          h3 Games
+        .activity__type.activity__type_5
+          h3 Culture and Education
+        .activity__type.activity__type_6
+          h3 Enjoyment and Relaxation
+        .activity__type.activity__type_7
+          h3 Travelling
+    section.search
+      .search__title
+        h2 Create your holiday activity
+      form.search__form(action='')
+        label(for='interests') Hi! What are your holiday interests?
+        input#interests.search__form-input(type='text', name='interests', placeholder='Enter your interests')
+      button.search__button(type='button')
+        span Search partners
+  footer.footer
+    hr
+    .footer__container
+      h2 DREAMSHARE
+      .footer__company-container
+        h3 Company
+        .footer__links
+          a(href='#') About
+          a(href='#') Contact
+          a(href='#') Press
+          a(href='#') Blog
+          a(href='#') Terms and Privacy
+          a(href='#') Help
+      h4 Partners
+      .footer__design-container
+        h5 DESIGNED BY
+        .footer__design
+          img(src='../images/mobile/areto.png', alt='')

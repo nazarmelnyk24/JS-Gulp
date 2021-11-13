@@ -1,0 +1,383 @@
+@import 'base/variables';
+@import 'base/mixins';
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+main{
+    padding: 0 10px;
+}
+
+.header{
+    width: 100%;
+    height: 540px;
+    margin: 0 auto;
+    background-image: url(../images/mobile/bck.png);
+    background-color: black;
+    &__nav{
+        width: 100%;
+        height: 56px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    &__login{
+        width: 63px;
+        height: 32px;
+        line-height: 30px;
+        a{
+            color: $col-main;
+            text-decoration: none;
+            @include font(14px, 400, 17px);
+        }
+    }
+    &__signup{
+        width: 90px;
+        height: 36px;
+        text-align: center;
+        border: 2px solid $col-main;
+        border-radius: 20px;
+        position: relative;
+        left: 1px;
+        line-height: 32px;
+        a{
+            color: $col-main;
+            text-decoration: none;
+            @include font(14px, 400, 17px);
+        }
+    }
+    &__logo{
+        width: 100%;
+        height: 24px;
+        margin-top: 97px;
+        position: relative;
+        left: 2px;
+        h1{
+            color: $col-main;
+            @include font(20px, 700, 24px);
+            text-align: center;
+        }
+    }
+    &__title{
+        width: 100%;
+        height: 74px;
+        margin-top: 27px;
+        h2{
+            color: $col-main;
+            @include font(30px, 700, 37px);
+            text-align: center;
+        }
+    }
+    &__undertitle{
+        width: 100%;
+        height: 49px;
+        margin-top: 6px;
+        padding: 0 20px;
+        h2{
+            font-family: $font2;
+            color: $col-main;
+            @include font(18px, 300, 24px);
+            text-align: center;
+        }
+    }
+    &__button{
+        width: 280px;
+        height: 40px;
+        margin: 14px 19px 0 21px;
+        background-color: $col-main2;
+        border: none;
+        border-radius: 20px;
+        span{
+            color: $col-main;
+            @include font(14px, 700, 17px);
+        }
+    }
+}
+
+.about{
+    width: 100%;
+    margin-top: 34px;
+    &__title{
+        width: 100%;
+        height: 27px;
+        margin-bottom: 15px;
+        h2{
+            @include font(22px, 700, 27px);
+            text-align: center;
+        }
+    }
+    &__article{
+        width: 100%;
+        height: 240px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        &_1{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(../images/mobile/step1.png);
+        }
+        &_2{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(../images/mobile/step2.png);
+        }
+        &_3{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(../images/mobile/step3.png);
+        }
+    }
+    &__step-button{
+        width: 70px;
+        height: 20px;
+        background-color: $col-main2;
+        border: none;
+        border-radius: 20px;
+        &_1{
+            margin: 64px 0 0 20px;
+        }
+        &_2{
+            margin: 95px 0 0 20px;
+        }
+        &_3{
+            margin: 64px 0 0 20px;
+        }
+        span{
+            color: $col-main;
+            letter-spacing: 2px;
+            @include font(10px, 400, 12px)
+        }
+    }
+    &__article-name{
+        &_1{
+            margin: 46px 0 0 20px;
+        }
+        &_2{
+            margin: 30px 0 0 20px;
+        }
+        &_3{
+            margin: 46px 0 0 20px;
+        }
+        h3{
+            color: $col-main;
+            @include font(24px, 700, 14px);
+        }
+    }
+    &__article-text{
+        &_1{
+            margin: 24px 30px 0 20px;
+        }
+        &_2{
+            margin: 23px 30px 0 20px;
+        }
+        &_3{
+            margin: 24px 30px 0 20px;
+        }
+        p{
+            font-family: $font2;
+            color: $col-main;
+            @include font(14px, 300, 14px)
+        }
+    }
+}
+
+.people{
+    width: 100%;
+    margin-top: 36px;
+    &__title{
+        width: 100%;
+        height: 54px;
+        margin-bottom: 14px;
+        h2{
+            @include font(22px, 700, 27px);
+            text-align: center;
+        }
+    }
+    &__account{
+        width: 236px;
+        height: 205px;
+        margin: 0 auto 16px auto;
+        text-align: center;
+        &_2{
+            height: 224px;
+        }
+    }
+    &__account-name{
+        margin-top: 13px;
+        span{
+            @include font(14px, 700, 17px);
+        }
+    }
+    &__account-info{
+        margin-top: 21px;
+        p{
+            font-family: $font2;
+            @include font(14px, 300, 14px);
+        }
+        &_2{
+            margin-top: 26px;
+        }
+    }
+    &__button{
+        width: 280px;
+        height: 40px;
+        margin: 20px  10px 0 10px;
+        background-color: $col-main;
+        border: 2px solid $col-main2;
+        border-radius: 20px;
+        span{
+            color: $col-main2;
+            @include font(14px, 700, 17px);
+        }
+    }
+}
+
+.activity{
+    width: 100%;
+    margin-top: 35px;
+    &__title{
+        width: 280px;
+        height: 54px;
+        margin: 0 auto 33px auto;
+        h2{
+            @include font(22px, 700, 27px);
+            text-align: center;
+        }
+    }
+    &__type{
+        width: 300px;
+        height: 120px;
+        margin: 10px 0;
+        border-radius: 4px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &_1{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(../images/mobile/act1.png);
+        }
+        &_2{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(../images/mobile/act2.png);
+        }
+        &_3{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(../images/mobile/act3.png);
+        }
+        &_4{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(../images/mobile/act4.png);
+        }
+        &_5{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(../images/mobile/act5.png);
+        }
+        &_6{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(../images/mobile/act6.png);
+        }
+        &_7{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(../images/mobile/act7.png);
+        }
+        h3{
+            
+            color: $col-main;
+            @include font(22px, 700, 27px);
+        }
+    }
+}
+
+.search{
+    width: 100%;
+    &__title{
+    width: 280px;
+    height: 54px;
+    margin: 35px auto 0px auto;
+    display: flex;
+    align-items: center;
+    h2{
+        @include font(22px, 700, 27px);
+        text-align: center;
+    }
+    }
+    &__form{
+        width: 280px;
+        margin: 17px auto 0 auto;
+        text-align: end;
+        label{
+            font-family: $font2;
+            @include font(18px, 300, 14px);
+        }
+    }
+    &__form-input{
+        font-family: $font2;
+        @include font(14px, 300, 16px);
+        width: 280px;
+        height: 40px;
+        border: 1px solid #999999;
+        border-radius: 3px;
+        margin-top: 12px;
+        padding: 14px 15px 10px 15px;
+    }
+    &__button{
+        width: 280px;
+        height: 40px;
+        margin: 10px 10px 40px 10px;
+        background-color: $col-main2;
+        border: none;
+        border-radius: 20px;
+        span{
+            color: $col-main;
+            @include font(14px, 700, 17px);
+        }
+    }
+
+}
+
+.footer{
+    height: 226px;
+    hr{
+        border-top: 2px solid $col-main2;
+    }
+    h2{
+        margin-top: 19px;
+        text-align: center;
+        color: $col-main2;
+        @include font(16px, 400, 20px);
+    }
+    h3{
+            margin-top: 13px;
+            text-align: center;
+            @include font(14px, 700, 17px);
+    }
+        
+    &__links{
+        margin: 0 auto;
+        width: 230px;
+        text-align: center;
+        word-spacing: 3px;
+        a{
+            text-decoration: none;
+            color: #999999;
+            @include font(14px, 300, 26px);
+            text-align: center;
+        }
+}
+h4{
+    margin-top: 7px;
+    text-align: center;
+    @include font(14px, 700, 17px);
+}
+h5{
+    margin-top: 14px;
+    color: #CCCCCC;
+    @include font(10px, 700, 12px);
+    letter-spacing: 1px;
+    text-align: center;
+}
+&__design{
+    width: 100%;
+    margin-top: 6px;
+    text-align: center;
+}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "js_pre-advanced_lesson_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-merge": "^0.1.1",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.43.4"
+  }
+}

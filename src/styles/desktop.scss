@@ -1,0 +1,432 @@
+@import 'base/variables';
+@import 'base/mixins';
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main{
+    padding: 0 250px;
+}
+
+.header{
+    width: 100%;
+    height: 700px;
+    margin: 0 auto;
+    padding: 0 292px 0 248px;
+    background-image: url(../images/desktop/bck.png);
+    background-color: black;
+    &__nav{
+        width: 100%;
+        height: 76px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    &__login{
+        width: 63px;
+        height: 32px;
+        line-height: 30px;
+        a{
+            color: $col-main;
+            text-decoration: none;
+            @include font(14px, 400, 17px);
+        }
+    }
+    &__signup{
+        width: 90px;
+        height: 36px;
+        text-align: center;
+        border: 2px solid $col-main;
+        border-radius: 20px;
+        position: relative;
+        line-height: 32px;
+        a{
+            color: $col-main;
+            text-decoration: none;
+            @include font(14px, 400, 17px);
+        }
+    }
+    &__logo{
+        width: 100%;
+        height: 24px;
+        position: absolute;
+        top: -52px;
+        left: -396px;
+        h1{
+            color: $col-main;
+            @include font(20px, 700, 24px);
+            text-align: center;
+        }
+    }
+    &__title{
+        width: 470px;
+        height: 126px;
+        margin: 146px 0 0 237px;
+        padding: 0 0;
+        h2{
+            color: $col-main;
+            @include font(52px, 700, 64px);
+            text-align: center;
+        }
+    }
+    &__undertitle{
+        width: 100%;
+        height: 49px;
+        margin: 29px 0 0 22px;
+        h2{
+            font-family: $font2;
+            color: $col-main;
+            @include font(24px, 300, 25px);
+            text-align: center;
+        }
+    }
+    &__button{
+        width: 225px;
+        height: 40px;
+        margin: 10px 0 0 360px;
+        background-color: $col-main2;
+        border: none;
+        border-radius: 20px;
+        span{
+            color: $col-main;
+            @include font(14px, 700, 17px);
+        }
+    }
+}
+
+.about{
+    width: 100%;
+    margin-top: 94px;
+    &__title{
+        width: 100%;
+        height: 27px;
+        margin-bottom: 35px;
+        h2{
+            @include font(26px, 700, 25px);
+            text-align: center;
+        }
+    }
+    &__article-container{
+        display: flex;
+        justify-content: center;
+    }
+    &__article{
+        width: 300px;
+        height: 400px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        &_1{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(../images/desktop/step1.png);
+        }
+        &_2{
+            margin: 0 20px;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(../images/desktop/step2.png);
+        }
+        &_3{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(../images/desktop/step3.png);
+        }
+    }
+    &__step-button{
+        width: 70px;
+        height: 20px;
+        background-color: $col-main2;
+        border: none;
+        border-radius: 20px;
+        &_1{
+            margin: 219px 0 0 25px;
+        }
+        &_2{
+            margin: 250px 0 0 25px;
+        }
+        &_3{
+            margin: 219px 0 0 25px;
+        }
+        span{
+            color: $col-main;
+            letter-spacing: 2px;
+            @include font(10px, 400, 12px)
+        }
+    }
+    &__article-name{
+        &_1{
+            margin: 22px 0 0 25px;
+        }
+        &_2{
+            margin: 24px 0 0 25px;
+            padding: 0 20px 0 0;
+        }
+        &_3{
+            margin: 22px 0 0 25px;
+        }
+        h3{
+            color: $col-main;
+            @include font(24px, 700, 26px);
+        }
+    }
+    &__article-text{
+        &_1{
+            margin: 24px 30px 0 25px;
+        }
+        &_2{
+            margin: 17px 30px 0 25px;
+        }
+        &_3{
+            margin: 24px 30px 0 25px;
+        }
+        p{
+            font-family: $font2;
+            color: $col-main;
+            @include font(14px, 300, 14px)
+        }
+    }
+}
+
+.people{
+    width: 941px;
+    margin: 82px 0 0 1px;
+    &__title{
+        width: 100%;
+        height: 54px;
+        margin-bottom: 10px;
+        h2{
+            @include font(26px, 700, 26px);
+            text-align: center;
+        }
+    }
+    &__account-container{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    &__account{
+        width: 221px;
+        height: 205px;
+        margin: 0 0;
+        text-align: center;
+        &_1{
+            order: 0;
+        }
+        &_2{
+            height: 224px;
+            margin-right: 19px;
+            order: 2;
+        }
+        &_3{
+            margin: 0 19px;
+            order: 1;
+        }
+        &_4{
+            height: 224px;
+            order: 3;
+        }
+    }
+    &__account-name{
+        margin-top: 13px;
+        span{
+            @include font(14px, 700, 17px);
+        }
+    }
+    &__account-info{
+        margin-top: 21px;
+        p{
+            font-family: $font2;
+            @include font(14px, 300, 14px);
+        }
+        &_2{
+            margin-top: 26px;
+        }
+        &_4{
+            margin-top: 26px;
+        }
+    }
+    &__button{
+        display: block;
+        width: 180px;
+        height: 40px;
+        margin: 36px  auto 0 auto;
+        background-color: $col-main;
+        border: 2px solid $col-main2;
+        border-radius: 20px;
+        span{
+            color: $col-main2;
+            @include font(14px, 700, 17px);
+        }
+    }
+}
+
+.activity{
+    width: 100%;
+    margin-top: 94px;
+    &__title{
+        width: 100%;
+        height: 54px;
+        margin: 0 auto -2px auto;
+        h2{
+            @include font(26px, 700, 25px);
+            text-align: center;
+        }
+    }
+    &__type-container{
+        width: 940px;
+        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 330px 330px 330px;
+    }
+    &__type{
+        width: 100%;
+        height: 310px;
+        border-radius: 4px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &_1{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(../images/desktop/act1.png);
+        }
+        &_2{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(../images/desktop/act2.png);
+        }
+        &_3{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(../images/desktop/act3.png);
+        }
+        &_4{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(../images/desktop/act4.png);
+        }
+        &_5{
+            grid-column: 2/4;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(../images/desktop/act5.png);
+        }
+        &_6{
+            grid-column: 1/3;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(../images/desktop/act6.png);
+        }
+        &_7{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(../images/desktop/act7.png);
+        }
+        h3{
+            
+            color: $col-main;
+            @include font(22px, 700, 27px);
+        }
+    }
+}
+
+.search{
+    width: 100%;
+    &__title{
+    width: 100%;
+    height: 54px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    h2{
+        @include font(26px, 700, 32px);
+        text-align: center;
+    }
+    }
+    &__form{
+        width: 280px;
+        margin: 38px auto 0 auto;
+        text-align: end;
+        label{
+            font-family: $font2;
+            @include font(18px, 300, 14px);
+        }
+    }
+    &__form-input{
+        font-family: $font2;
+        @include font(14px, 300, 16px);
+        width: 299px;
+        height: 40px;
+        border: 1px solid #999999;
+        border-radius: 3px;
+        margin-top: 22px;
+        padding: 14px 15px 10px 15px;
+        position: relative;
+        left: -102px;
+    }
+    &__button{
+        width: 172px;
+        height: 40px;
+        margin: 10px 10px 40px 105px;
+        background-color: $col-main2;
+        border: none;
+        border-radius: 20px;
+        position: relative;
+        left: 432px;
+        bottom: 50px;
+        span{
+            color: $col-main;
+            @include font(14px, 700, 17px);
+        }
+    }
+
+}
+
+.footer{
+    margin-top: 10px;
+    height: 260px;
+    hr{
+        border-top: 2px solid $col-main2;
+    }
+    &__container{
+        padding: 0 249px;
+        display: flex;
+
+    }
+    h2{
+        margin-top: 36px;
+        color: $col-main2;
+        @include font(16px, 400, 20px);
+    }
+    &__company-container{
+        margin: 25px 0 0 123px;
+    }
+    h3{
+            margin-bottom: 10px;
+            text-align: start;
+            @include font(14px, 700, 17px);
+    }
+        
+    &__links{
+        width: 170px;
+        display: flex;
+        flex-direction: column;
+        a{
+            text-decoration: none;
+            color: #999999;
+            @include font(14px, 300, 26px);
+            text-align: start;
+        }
+}
+h4{
+    margin: 38px 0 0 68px;
+    text-align: center;
+    @include font(14px, 700, 17px);
+}
+.footer__design-container{
+    margin: 24px 0 0 289px;
+}
+h5{
+    color: #CCCCCC;
+    @include font(10px, 700, 12px);
+    letter-spacing: 1px;
+    text-align: end;
+}
+&__design{
+    width: 100%;
+    margin-top: 6px;
+    text-align: center;
+}
+}
